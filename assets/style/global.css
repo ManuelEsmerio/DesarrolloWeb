@@ -28,13 +28,13 @@ body {
   color: aliceblue;
 }
 
-.sideBar .sideBarContainerImg {
+.nav-collapse .sideBarContainerImg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sideBar .sideBarContainerImg img {
+.nav-collapse .sideBarContainerImg img {
   margin: 1em;
   width: 70%;
 }
@@ -47,6 +47,7 @@ body {
   display: block;
   border-bottom-right-radius: 1em;
   border-top-right-radius: 1em;
+  /* border-bottom: 1px solid rgba(179, 178, 178, 0.5); */
   text-decoration: none;
   text-align: center;
   color: white;
@@ -70,6 +71,7 @@ section {
   /* border: 1px solid; */
   margin-left: 250px;
   height: 100vh;
+  transition: margin-left 1s;
   /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.1); */
 }
 

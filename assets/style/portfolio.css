@@ -23,10 +23,11 @@
   padding: 0.5em;
   width: 60%;
   max-width: 260px;
+  transition: border-radius 4s ease-in-out 1s;
 }
 
 .item:hover {
-  border-radius: 1.5em;
+  border-radius: 2em;
 }
 
 .item p {
