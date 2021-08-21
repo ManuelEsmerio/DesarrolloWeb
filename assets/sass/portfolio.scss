@@ -1,0 +1,13 @@
+@import "./variables";
+
+.portfolio {
+  .card-portfolio {
+    img {
+        transition: 1s;
+      &:hover {
+        filter: opacity(0.7);
+        transition: 1s;
+      }
+    }
+  }
+}

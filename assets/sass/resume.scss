@@ -1,0 +1,46 @@
+@import "./variables";
+
+.mt-30 {
+  margin-top: 30px;
+
+  .progress{
+      height: 10px;
+  }
+
+  .p-95 {
+    width: $p-95;
+  }
+
+  .p-90 {
+    width: $p-90;
+  }
+
+  .p-85 {
+    width: $p-85;
+  }
+
+  .p-80 {
+    width: $p-80;
+  }
+
+  .p-75 {
+    width: $p-75;
+  }
+
+  .p-70 {
+    width: $p-70;
+  }
+
+  .p-65 {
+    width: $p-65;
+  }
+
+  .p-60 {
+    width: $p-60;
+  }
+}
+
+.mi-progress-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}

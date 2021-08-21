@@ -1,0 +1,40 @@
+@import "./variables";
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 60px);
+
+  .group-icons {
+    list-style: none;
+
+    .li-icons {
+      display: inline;
+      margin: 1em;
+      font-size: 3rem;
+
+      .facebook {
+        color: $facebook;
+      }
+
+      .github {
+        color: $github;
+      }
+
+      .linkedin {
+        color: $linkedin;
+      }
+
+      .bx {
+        transform: scale(1);
+        transition: 1.2s;
+        &:hover {
+          transform: scale(1.3);
+          transition: 1.2s;
+        }
+      }
+    }
+  }
+}

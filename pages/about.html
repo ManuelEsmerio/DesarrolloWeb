@@ -7,65 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
-    <!-- Customer Style -->
-    <link rel="stylesheet" href="../assets/style/global.css">
-    <link rel="stylesheet" href="../assets/style/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="sideBar">
-            <div class="sideBarContainerImg">
-                <img src="../assets/img/profile.svg" alt="imgProfile" class="animate__animated animate__backInLeft animate__slow">
-            </div>
-            <ul class="sideBarList">
-                <a href="../index.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Home</li>
+    <!-- Side-Nav -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+
+        <div class="sidebar-header">
+            <img src="https://tf-react-chester.vercel.app/images/brand-image.jpg" alt="logo">
+            <ul class="nav flex-column text-white w-100">
+                <a href="../index.html" class="nav-link">
+                    <i class="bx bxs-dashboard"></i>
+                    <span class="mx-2">Home</span>
                 </a>
-                <a href="../pages/about.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>About</li>
+                <a href="./about.html" class="nav-link">
+                    <i class="bx bx-user-check"></i>
+                    <span class="mx-2">About</span>
                 </a>
-                <a href="../pages/portfolio.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Portfolio</li>
+                <a href="./resume.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Resume</span>
                 </a>
-                <a href="../pages/resume.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Resume</li>
+                <a href="./portfolio.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Portfolio</span>
                 </a>
-                <a href="../pages/contact.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Contact</li>
+                <a href="./contact.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Contact</span>
                 </a>
             </ul>
-        </nav>
-
-        <footer class="footer animate__animated animate__jackInTheBox animate__slow">
-            Power by Esmerio55
-        </footer>
-    </header>
-
-    <section class="section2" id="about">
-        <div class="about__image animate__animated animate__fadeInUp">
-            <img src="../assets/img/profile.svg" alt="about me">
         </div>
-        <div class="about__info animate__animated animate__fadeInUp animate__slow">
-            <div class="container">
-                <h1>Im Manuel Esmerio Garcia</h1>
-                <p>Lorem ipsum dolor sit amet, consect lorem ipsum dolor, sed diam nonum</p>
+    </div>
 
-                <ul class="list">
-                    <li class="about__item">Full Name: Manuel Esmerio Garcia</li>
-                    <li class="about__item">Age: 25 Years</li>
-                    <li class="about__item">Languages: Spanish, English</li>
-                    <li class="about__item">Freelance: Available</li>
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+        <!-- Top Nav -->
+        <nav class="navbar top-navbar">
+            <a class="btn btn-circle border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+        </nav>
+        <!--End Top Nav -->
 
-                    <button type="download" class="btn btn-primary"> Download CV </button>
-                </ul>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-center">
+                        <img src="https://tf-react-chester.vercel.app/images/about-image.jpg" alt="imagen about me"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container-text">
+                        <div class="text-center">
+                            <h1>Im Manuel Esmerio Garcia</h1>
+                            <p>Lorem ipsum dolor sit amet, consect lorem ipsum dolor, sed diam nonum</p>
+                        </div>
+
+                        <ul class="list-info-about">
+                            <li><b>Full Name:</b> Manuel Esmerio Garcia</li>
+                            <li><b>Age:</b> 25 Years</li>
+                            <li><b>Languages:</b> Spanish, English</li>
+                            <li><b>Freelance:</b> Available</li>
+
+                            <button type="download" class="btn btn-primary"> Download CV </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card card-services">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card card-services">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card card-services">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile Application</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

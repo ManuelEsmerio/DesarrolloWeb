@@ -4,11 +4,14 @@
   justify-content: center;
   align-items: center;
 }
-
 .social-media{
   margin: 3em;
 }
 
 .social{
   margin: 1em;
+}
+
+.col img{
+  transform: scale(1.2, 1.2);
 }

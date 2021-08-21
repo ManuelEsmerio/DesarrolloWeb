@@ -1,0 +1,15 @@
+@import "./variables";
+
+.form-contact{
+    padding: 1em;
+}
+
+.img-contact{
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .img-contact{
+        display: none;
+    }
+}

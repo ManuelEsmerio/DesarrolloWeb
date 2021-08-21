@@ -1,128 +1,45 @@
-.section2 {
-  display: flex;
-  height: 100vh;
-  /* flex-wrap: wrap; */
+.img-about{
+  width: 350px;
 }
 
-.section2 img{
-  max-width: 260px;
+.container ul{
+  list-style: none;
+  text-decoration: none;
 }
 
-.about__info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container ul li{
+  text-align: left;
+}
+
+.btn-download{
   color: white;
-  padding: 1.5em;
-  /* border: 1px solid; */
-}
-
-.about__info .container h1,
-.about__info .container p {
-  text-align: center;
-}
-
-.about__info .container h1 {
-  color: #e28086;
-}
-
-.about__info .container .list {
-  padding-top: 2em;
-  list-style-type: none;
-}
-
-.about__info .container .list .about__item {
-  padding: 0.35em;
-}
-
-.about__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid; */
-}
-
-.about__image img {
-  width: 70%;
-}
-
-.btn {
+  background-color: #fc2f62 !important;
   border: none;
+}
+
+.btn-download:hover{
+  color: white;
+  background-color: #b11f44 !important;
+  border: none;
+}
+
+.mi-sectiontitle {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.mi-sectiontitle h2 {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.service-container{
+  margin-top: 5em;
+}
+
+.service{
   margin: 1em;
-  padding: 0.35em;
-  border-radius: 0.35em;
-}
-
-.btn-primary {
-  color: aliceblue;
-  background-color: #0a66c2;
-}
-
-.btn-primary:hover {
-  color: aliceblue;
-  background-color: #1196f5;
-  transition: 0.3s;
-}
-
-.btn-submit {
-  background-color: salmon;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.container {
-  padding: 1em auto;
-}
-
-@media (min-width: 0px) {
-  .section2 {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1em;
-  }
-
-  .list {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .section2 {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .list {
-    text-align: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section2 {
-    flex-direction: row;
-  }
-
-  .about__image img {
-    max-width: 70%;
-  }
-
-  .list {
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section2 {
-    flex-direction: row;
-  }
-
-  .about__image img {
-    max-width: 70%;
-  }
-
-  .list {
-    text-align: left;
-  }
 }

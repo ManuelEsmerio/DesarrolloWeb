@@ -7,145 +7,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
 
-    <!-- Customer Style -->
-    <link rel="stylesheet" href="../assets/style/global.css">
-    <link rel="stylesheet" href="../assets/style/resume.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="sideBar">
-            <div class="sideBarContainerImg">
-                <img src="../assets/img/profile.svg" alt="imgProfile" class="animate__animated animate__backInLeft animate__slow">
-            </div>
-            <ul class="sideBarList">
-                <a href="../index.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Home</li>
+    <!-- Side-Nav -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+
+        <div class="sidebar-header">
+            <img src="https://tf-react-chester.vercel.app/images/brand-image.jpg" alt="logo">
+            <ul class="nav flex-column text-white w-100">
+                <a href="../index.html" class="nav-link">
+                    <i class="bx bxs-dashboard"></i>
+                    <span class="mx-2">Home</span>
                 </a>
-                <a href="../pages/about.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>About</li>
+                <a href="./about.html" class="nav-link">
+                    <i class="bx bx-user-check"></i>
+                    <span class="mx-2">About</span>
                 </a>
-                <a href="../pages/portfolio.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Portfolio</li>
+                <a href="./resume.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Resume</span>
                 </a>
-                <a href="../pages/resume.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Resume</li>
+                <a href="./portfolio.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Portfolio</span>
                 </a>
-                <a href="../pages/contact.html" class="sideBarListItem animate__animated animate__jackInTheBox">
-                    <li>Contact</li>
+                <a href="./contact.html" class="nav-link">
+                    <i class="bx bx-conversation"></i>
+                    <span class="mx-2">Contact</span>
                 </a>
             </ul>
+        </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+        <!-- Top Nav -->
+        <nav class="navbar top-navbar">
+            <a class="btn btn-circle border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
         </nav>
+        <!--End Top Nav -->
 
-        <footer class="footer animate__animated animate__jackInTheBox animate__slow">
-            Power by Esmerio55
-        </footer>
-    </header>
-
-    <section class="section4" id="resume">
-        <h1 class="subtitleSection">knowledge</h1>
-        <div class="knowledge">
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/react.svg" alt="react" class="img__react">
-                    <span>React JS</span>
+        <div class="mt-3">
+            <div class="container">
+                <div class="mi-sectiontitle">
+                    <h2>My Skills</h2>
                 </div>
-                <div class="progress">
-                    <div class="progress__react">
-                        <p class="percentage percentage--react">75%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/javascript.svg" alt="javascript">
-                    <span>JavaScript</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__javascript">
-                        <p class="percentage percentage--javascript">90%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/html.svg" alt="html">
-                    <span>HTML</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__html">
-                        <p class="percentage percentage--html">95%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/css.svg" alt="css">
-                    <span>CSS</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__css">
-                        <p class="percentage percentage--css">75%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/php.svg" alt="php">
-                    <span>PHP</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__php">
-                        <p class="percentage percentage--php">85%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/vue.svg" alt="vue">
-                    <span>Vue JS</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__vue">
-                        <p class="percentage percentage--vue">75%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/node.svg" alt="node">
-                    <span>Node JS</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__node">
-                        <p class="percentage percentage--node">70%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume__card">
-                <div class="container__code">
-                    <img src="../assets/img/typescript.svg" alt="typescript">
-                    <span>TypeScript</span>
-                </div>
-                <div class="progress">
-                    <div class="progress__typescript">
-                        <p class="percentage percentage--typescript">50%</p>
+                <div class="mi-skills">
+                    <div class="row mt-30-reverse">
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">HTML5</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">95%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-95" role="progressbar" aria-valuenow="95"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">CSS3</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">75%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-75" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">Javascript</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">90%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-90" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">jQuery</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">75%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-75" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">ReactJS</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">80%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-80" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">VueJS</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">70%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-70" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">NodeJS</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">65%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-65" role="progressbar" aria-valuenow="65"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">PHP</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">80%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-80" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">SCSS</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">60%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-60" role="progressbar" aria-valuenow="60"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mi-progress">
+                                <h6 class="mi-progress-title">Material UI</h6>
+                                <div class="mi-progress-inner">
+                                    <div class="mi-progress-percentage">80%</div>
+                                    <div class="progress">
+                                        <div class="progress-bar p-80" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="mi-sectiontitle">
+                    <h2>Working Experience</h2>
+                </div>
+
+                <div class="container row row-cols-1 row-cols-md-3 g-4 mt-2 mb-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Frontend Web Developer</h5>
+                                <p><span>Abc Company</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Frontend Web Developer</h5>
+                                <p><span>CBA Company</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">UI/UX Designer</h5>
+                                <p><span>Example Company</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="mi-sectiontitle">
+                    <h2>Educational Qualifications</h2>
+                </div>
+
+                <div class="container row row-cols-1 row-cols-md-3 g-4 mt-2 mb-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Master of Science</h5>
+                                <p><span>Abc University</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bachelor of Science</h5>
+                                <p><span>Abc University</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card card-services">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Higher Schoold Graduation</h5>
+                                <p><span>Abc College</span></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+                                    magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem
+                                    velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi.
+                                    Molestiae, vel porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

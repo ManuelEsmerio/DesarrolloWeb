@@ -1,108 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/style/global.css">
-  <link rel="stylesheet" href="./assets/style/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-  <title>Profile</title>
+  <!-- BOX ICONS CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+
 </head>
 
 <body>
+  <!-- Side-Nav -->
+  <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
 
-  <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar">
-      <div class="custom-menu">
-        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-        </button>
-      </div>
-      <div class="img bg-wrap text-center py-4" style="background-image: url(assets/img/background.png);">
-        <div class="user-logo">
-          <div class="img" style="background-image: url(assets/img/profile.svg);"></div>
-          <h3>Manuel Esmerio</h3>
-        </div>
-      </div>
-      <ul class="list-unstyled components mb-5">
-        <li class="active">
-          <a href="./index.html"><span class="mr-3"></span> Home</a>
-        </li>
-        <li>
-          <a href="./pages/about.html"><span class="mr-3"></span> About</a>
-        </li>
-        <li>
-          <a href="./pages/resume.html"><span class="mr-3"></span> Resume</a>
-        </li>
-        <li>
-          <a href="./pages/portfolio.html"><span class="mr-3"></span> Portfolio</a>
-        </li>
-        <li>
-          <a href="./pages/contact.html"><span class="mr-3"></span> Contact</a>
-        </li>
+    <div class="sidebar-header">
+      <img src="https://tf-react-chester.vercel.app/images/brand-image.jpg" alt="logo">
+      <ul class="nav flex-column text-white w-100">
+        <a href="./index.html" class="nav-link">
+          <i class="bx bxs-dashboard"></i>
+          <span class="mx-2">Home</span>
+        </a>
+        <a href="./pages/about.html" class="nav-link">
+          <i class="bx bx-user-check"></i>
+          <span class="mx-2">About</span>
+        </a>
+        <a href="./pages/resume.html" class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <span class="mx-2">Resume</span>
+        </a>
+        <a href="./pages/portfolio.html" class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <span class="mx-2">Portfolio</span>
+        </a>
+        <a href="./pages/contact.html" class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <span class="mx-2">Contact</span>
+        </a>
       </ul>
-    </nav>
-
-    <!-- Page Content  -->
-    <div id="content" class="p-4 p-md-5 pt-5">
-      <div>
-        <h2 class="mb-4">Hi I'm Manuel Esmerio Garcia</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.</p>
-  
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <a href="https://www.facebook.com/manuel.esmerio">
-                  <img src="./assets/img/1.svg" alt="facebook">
-                </a>
-              </div>
-              <div class="col">
-                <a href="https://github.com/ManuelEsmerio">
-                  <img src="./assets/img/2.svg" alt="github">
-                </a>
-              </div>
-              <div class="col">
-                <a href="https://www.linkedin.com/in/manuel-esmerio-garcia-ba1973116/">
-                  <img src="./assets/img/3.svg" alt="linkedin">
-                </a>
-              </div>
-            </div>
-          </div>
-
-      </div>
-      
     </div>
   </div>
 
+  <!-- Main Wrapper -->
+  <div class="p-1 my-container active-cont">
 
+    <!-- Top Nav -->
+    <nav class="navbar top-navbar">
+      <a class="btn btn-circle border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+    </nav>
+    <!--End Top Nav -->
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container-center">
+      <div class="row col-12">
+        <h1>
+          Hi Manuel Esmerio Garcia
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima omnis laudantium quibusdam,
+          voluptates beatae distinctio quae quaerat.
+        </p>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="./assets/js/jQuery.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        <ul class="group-icons">
+          <li class="li-icons"><a href="" class="facebook"><i class='bx bxl-facebook-circle'></i></i></a></li>
+          <li class="li-icons"><a href="" class="github"><i class='bx bxl-github'></i></a></li>
+          <li class="li-icons"><a href="" class="linkedin"><i class='bx bxl-linkedin-square' ></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+  <!-- custom js -->
 
-    <script src="./assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>

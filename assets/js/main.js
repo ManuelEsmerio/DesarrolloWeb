@@ -1,19 +1,8 @@
-(function($) {
+let menu_btn = document.querySelector("#menu-btn");
+let sidebar = document.querySelector("#sidebar");
+let container = document.querySelector(".my-container");
 
-	"use strict";
-
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-
-	};
-	fullHeight();
-
-	$('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-  });
-
-})(jQuery);
+menu_btn.addEventListener("click", () => {
+	sidebar.classList.toggle("active-nav");
+	container.classList.toggle("active-cont");
+});
