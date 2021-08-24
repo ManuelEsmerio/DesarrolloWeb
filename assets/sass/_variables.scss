@@ -1,12 +1,13 @@
 // Theme
-$theme : 'dark';
+$theme : '';
 
 // Background
-$bg-sidebar: #000;
+$bg-sidebar: rgb(30, 17, 66);
 $bg-body: #fff;
 
 // hover
 $hv-sidebar: #ffffff26;
+$hv-color-sidebar : #11101d;
 
 // color
 $white: #fff;
@@ -36,13 +37,15 @@ $hg-body: 100vh;
 
 // action Theme
 
+// Background
 @if $theme == 'dark' {
-    $bg-sidebar: #000;
+    $bg-sidebar: rgb(15, 4, 46);
     $color-sidebar : #fff;
     $hv-sidebar: #ffffff26;
 } @else{
-    $bg-sidebar: #fff;
-    $color-sidebar : #000;
-    $hv-sidebar: #e40a0a77;
+    $bg-sidebar: #11101d;
+    $color-sidebar : #fff;
+    $hv-sidebar: #fff;
+    $hv-color-sidebar : #11101d;
 }
 

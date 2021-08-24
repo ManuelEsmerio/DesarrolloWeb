@@ -7,6 +7,10 @@
       height: 10px;
   }
 
+  .progress-bar{
+    background-color: #2f2d4e;
+  }
+
   .p-95 {
     width: $p-95;
   }
@@ -43,4 +47,20 @@
 .mi-progress-title {
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.img-working{
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #fd726f;
+  width: 33px;
+  height: 30px;
+}
+
+.img-school{
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #2f2d4e;
+  width: 33px;
+  height: 30px;
 }

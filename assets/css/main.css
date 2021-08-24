@@ -12,20 +12,21 @@ body {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #000;
+  background-color: #11101d;
   transition: 0.5s;
   border-top-right-radius: 2.5em;
-  border-bottom-right-radius: 2.5em;
   box-shadow: 10px 5px 5px #0000004a; }
 
 .nav-link {
-  color: #fff; }
+  color: #fff;
+  margin: 0.25em; }
 
 .nav-link:active,
 .nav-link:focus,
 .nav-link:hover {
-  background-color: #ffffff26;
-  color: #fff; }
+  background-color: #fff;
+  color: #11101d;
+  border-radius: 0.7em; }
 
 .active-nav {
   margin-left: 0; }
@@ -35,7 +36,7 @@ body {
   margin-left: 220px; }
 
 #menu-btn {
-  background-color: #000;
+  background-color: #11101d;
   color: #fff;
   margin-left: 1em;
   border-radius: 0.7em; }
@@ -98,6 +99,10 @@ body {
 
 .container .card-services {
   box-shadow: 2px 2px 10px #666; }
+  .container .card-services .card-img-top {
+    padding: 1em;
+    max-width: 120px;
+    margin: 0 auto; }
 
 @media (max-width: 767px) {
   .container-text {
@@ -109,6 +114,8 @@ body {
   margin-top: 30px; }
   .mt-30 .progress {
     height: 10px; }
+  .mt-30 .progress-bar {
+    background-color: #2f2d4e; }
   .mt-30 .p-95 {
     width: 95%; }
   .mt-30 .p-90 {
@@ -130,18 +137,42 @@ body {
   font-weight: 600;
   margin-bottom: 0; }
 
+.img-working {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #fd726f;
+  width: 33px;
+  height: 30px; }
+
+.img-school {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #2f2d4e;
+  width: 33px;
+  height: 30px; }
+
 .portfolio .card-portfolio img {
   transition: 1s; }
   .portfolio .card-portfolio img:hover {
-    filter: opacity(0.7);
+    filter: opacity(0.6);
     transition: 1s; }
 
-.form-contact {
-  padding: 1em; }
+.portfolio .card-portfolio:hover {
+  box-shadow: 2px 2px 10px #666;
+  transition: 1.5s; }
 
-.img-contact {
+.form-contact {
+  padding: 1.5em;
+  border: 1px solid;
+  border-radius: 1em;
+  box-shadow: 2px 2px 10px #666; }
+
+.div-contact {
   display: block; }
 
+.img-contact {
+  max-width: 80%; }
+
 @media (max-width: 767px) {
-  .img-contact {
+  .div-contact {
     display: none; } }

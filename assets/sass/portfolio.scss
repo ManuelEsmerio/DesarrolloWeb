@@ -5,9 +5,13 @@
     img {
         transition: 1s;
       &:hover {
-        filter: opacity(0.7);
+        filter: opacity(0.6);
         transition: 1s;
       }
+    }
+    &:hover{
+      box-shadow: $box-shadow;
+      transition: 1.5s;
     }
   }
 }

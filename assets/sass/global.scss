@@ -19,19 +19,21 @@ body {
   background-color: $bg-sidebar;
   transition: 0.5s;
   border-top-right-radius: 2.5em;
-  border-bottom-right-radius: 2.5em;
+  // border-bottom-right-radius: 2.5em;
   box-shadow: 10px 5px 5px #0000004a;
 }
 
 .nav-link{
     color: $color-sidebar;
+    margin: 0.25em;
 }
 
 .nav-link:active,
 .nav-link:focus,
 .nav-link:hover {
   background-color: $hv-sidebar;
-  color: $color-sidebar;
+  color: $hv-color-sidebar;
+  border-radius: 0.7em;
 }
 
 .active-nav {
