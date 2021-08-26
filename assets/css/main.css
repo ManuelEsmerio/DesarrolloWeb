@@ -151,6 +151,9 @@ body {
   width: 33px;
   height: 30px; }
 
+.card-resume {
+  box-shadow: 1px 1px 3px #666; }
+
 .portfolio .card-portfolio img {
   transition: 1s; }
   .portfolio .card-portfolio img:hover {
@@ -163,9 +166,8 @@ body {
 
 .form-contact {
   padding: 1.5em;
-  border: 1px solid;
   border-radius: 1em;
-  box-shadow: 2px 2px 10px #666; }
+  box-shadow: 1px 1px 3px #666; }
 
 .div-contact {
   display: block; }
