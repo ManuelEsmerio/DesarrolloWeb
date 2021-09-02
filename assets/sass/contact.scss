@@ -1,5 +1,11 @@
 @import "./variables";
 
+
+.wrapper-contact{
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
 .form-contact{
     padding: 1.5em;
     border-radius: 1em;
@@ -13,13 +19,6 @@
 .img-contact{
     max-width: 80%;
 }
-
-
-// @media (min-width: 800px) {
-//     .div-contact{
-//         display: none;
-//     }
-// }
 
 @media (max-width: 767px) {
     .div-contact{
