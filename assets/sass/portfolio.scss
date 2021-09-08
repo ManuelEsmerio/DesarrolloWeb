@@ -4,6 +4,7 @@
   .card-portfolio {
     img {
         transition: 1s;
+        min-height: 282px;
       &:hover {
         filter: opacity(0.6);
         transition: 1s;

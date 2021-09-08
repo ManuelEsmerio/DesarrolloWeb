@@ -67,4 +67,17 @@
 
 .card-resume{
   box-shadow: $box-shadow-little;
+  min-height: 232px;
+}
+
+.info-now{
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #2778ff;
+  width: 63px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-align: center;
 }

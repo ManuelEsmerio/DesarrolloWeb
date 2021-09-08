@@ -38,6 +38,20 @@
     .container{
         .list-info-about{
             text-align: center;
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 974px) {
+    .container-text{
+        margin-top: 1em;
+    }
+
+    .container{
+        .list-info-about{
+            text-align: center;
+            padding-left: 0;
         }
     }
 }

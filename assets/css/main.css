@@ -108,7 +108,15 @@ body {
   .container-text {
     margin-top: 1em; }
   .container .list-info-about {
-    text-align: center; } }
+    text-align: center;
+    padding-left: 0; } }
+
+@media (max-width: 974px) {
+  .container-text {
+    margin-top: 1em; }
+  .container .list-info-about {
+    text-align: center;
+    padding-left: 0; } }
 
 .mt-30 {
   margin-top: 30px; }
@@ -152,10 +160,23 @@ body {
   height: 30px; }
 
 .card-resume {
-  box-shadow: 1px 1px 3px #666; }
+  box-shadow: 1px 1px 3px #666;
+  min-height: 232px; }
+
+.info-now {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #2778ff;
+  width: 63px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-align: center; }
 
 .portfolio .card-portfolio img {
-  transition: 1s; }
+  transition: 1s;
+  min-height: 282px; }
   .portfolio .card-portfolio img:hover {
     filter: opacity(0.6);
     transition: 1s; }
@@ -165,7 +186,6 @@ body {
   transition: 1.5s; }
 
 .wrapper-contact {
-  height: calc(100vh - 120px);
   overflow: hidden; }
 
 .form-contact {
